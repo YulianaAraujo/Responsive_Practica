@@ -18,8 +18,8 @@
         h1{
           width:80vw;
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          text-align: center;
           margin: 1% 5%;
+          text-align: center;
         }
         ul li {
           background-color:rgb(0, 0, 65);
@@ -38,17 +38,107 @@
             text-decoration: none;
             text-align: center;
         }
+@media (min-width: 800px){
+  .contenedor{
+          display:grid;
+          grid-template-columns: auto ;  
+          grid-template-rows: repeat(3, 2ft) ;
+          grid-gap: 10px;
+        }
+        .guia_2{
+          display:grid;
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(2, auto);
+        }
+
+        .titulo_1{
+          grid-area: 1/2/2/1;
+        }
+
+        .uno{
+          grid-area: 2/2/3/1;
+        }
+
+        .dos{
+          grid-area: 2/3/3/2;
+        }
+        .guia_3{
+          display:grid;
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(2, auto);
+        }
+
+        .titulo_2{
+          grid-area: 1/2/2/1;
+        }
+
+        .tres{
+          grid-area: 2/2/3/1;
+        }
+
+        .cuatro{
+          grid-area: 2/3/3/2;
+        }
+}
+        
     </style>
 </head>
 <body>
     <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" alt="freeCodeCamp">
-    <h1>Solucion Practica 2</h1>
-   <ul>
-       <li><a href="guia_2/create-a-media-query.html">Create a media query</a></li>
-       <li><a href="guia_2/make-an-image-responsive.html">Make an image responsive</a></li>
-       <li><a href="guia_2/make-typography-responsive.html">Make typography responsive</a></li>
-       <li><a href="guia_2/use-a-retina-image-for-higher-resolution-displays.html">Use a retina image for higher resolution displays</a></li>
-   </ul> 
+ 
+ <div class="contenedor">
+  <div class="guia_2">
+  <h1 class="titulo_1">Responsive Web Design Principles</h1>
+  <div class="uno">
+    <ul>
+      <li><a href="guia_2/create-a-media-query.html" target="_blank">Create a media query</a></li>
+      <li><a href="guia_2/make-an-image-responsive.html" target="_blank">Make an image responsive</a></li>
+  </ul>
+  </div>
+   <div class="dos">
+    <ul>
+      <li><a href="guia_2/make-typography-responsive.html" target="_blank">Make typography responsive</a></li>
+      <li><a href="guia_2/use-a-retina-image-for-higher-resolution-displays.html" target="_blank">Use a retina image for higher resolution displays</a></li>
+    </ul> 
+   </div>
+  </div> 
+  <div class="guia_3">
+  <h1 class="titulo_2">CSS Grid</h1>
+
+    <div class="tres">
+      <ul>
+      <li><a href="guia_3/create-your-first-css-grid.html" target="_blank">Create your first css grid</a></li>
+      <li><a href="guia_3/add-columns-with-grid-template-columns.html" target="_blank">Add columns with grid template columns</a></li>
+      <li><a href="guia_3/add-rows-with-grid-template-rows.html" target="_blank">Add rows with grid template rows</a></li>
+      <li><a href="guia_3/use-css-grid-units-to-change-the-size-of-columns-and-rows.html" target="_blank">Use css grid units to change the size of columns and rows</a></li>
+      <li><a href="guia_3/create-a-column-gap-using-grid-column-gap.html" target="_blank">Create a column gap using grid column gap</a></li>
+      <li><a href="guia_3/create-a-row-gap-using-grid-row-gap.html" target="_blank">Create a row gap using grid row gap</a></li>
+      <li><a href="guia_3/add-gaps-faster-with-grid-gap.html" target="_blank">Add gaps faster with grid gap</a></li>
+      <li><a href="guia_3/use-grid-column-to-control-spacing.html" target="_blank">Use grid column to control spacing</a></li>
+      <li><a href="guia_3/use-grid-row-to-control-spacing.html" target="_blank">Use grid row to control spacing</a></li>
+      <li><a href="guia_3/align-an-item-horizontally-using-justify-self.html" target="_blank">Align an item horizontally using justify-self</a></li>
+      <li><a href="guia_3/align-an-item-vertically-using-align-self.html" target="_blank">Align an item vertically using align self</a></li>  
+    </ul>
+    </div>
+    <div class="cuatro">
+      <ul>
+        <li><a href="guia_3/align-all-items-horizontally-using-justify-items.html" target="_blank">Align all items horizontally using-justify-items</a></li>
+        <li><a href="guia_3/align-all-items-vertically-using-align-items.html" target="_blank">Align all items vertically using align-items</a></li>
+        <li><a href="guia_3/divide-the-grid-into-an-area-template.html" target="_blank">Divide the grid into an area template</a></li>
+        <li><a href="guia_3/place-items-in-grid-areas-using-the-grid-area-property.html" target="_blank">Place items in grid areas using-the-grid-area-property</a></li>
+        <li><a href="guia_3/use-grid-area-without-creating-an-areas-template.html" target="_blank">Use grid area-without creating an areas-template</a></li>
+        <li><a href="guia_3/reduce-repetition-using-the-repeat-function.html" target="_blank">Reduce repetition using the repeat function</a></li>
+        <li><a href="guia_3/limit-item-size-using-the-minmax-function.html" target="_blank">Limit item size using the minmax function</a></li>
+        <li><a href="guia_3/create-flexible-layouts-using-auto-fill.html" target="_blank">Create flexible layouts using auto fill</a></li>
+        <li><a href="guia_3/create-flexible-layouts-using-auto-fit.html" target="_blank">Create flexible layouts using auto fit</a></li>
+        <li><a href="guia_3/use-media-queries-to-create-responsive-layouts.html" target="_blank">Use media queries to create responsive-layouts</a></li>
+        <li><a href="guia_3/create-grids-within-grids.html" target="_blank">Create grids within grids</a></li>    
+      </ul>
+       </div>
+
+  </div> 
+ </div>
        
 </body>
+
 </html>
